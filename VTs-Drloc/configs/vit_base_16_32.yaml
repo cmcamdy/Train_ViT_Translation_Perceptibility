@@ -1,0 +1,5 @@
+MODEL:
+  TYPE: vit
+  NAME: vit_base_16_32
+DATA:
+  IMG_SIZE: 32
