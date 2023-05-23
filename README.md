@@ -9,8 +9,10 @@
 7. [Main Exam](#Main-Exam)
 10. [References](#References)
 
+![](./assert/pipev2.png)
 
 ## Abstract
+
 > **Abstract:** The Vision Transformer (ViT) has become a popular vision model in recent years, replacing traditional Convolutional Neural Network (CNN) models. However, ViTs tend to require a larger amount of data due to the lack of some properties inherent in the CNN architecture. To address this problem, researchers have proposed various methods to optimize ViTs' performance on small datasets. In this paper, we propose a self-supervised auxiliary task to guide ViTs in learning translation perceptibility, which enables the models to acquire inductive bias more efficiently from small datasets, without the need for pre-training on large datasets or modifications to the network architecture. The effectiveness of the approach has been demonstrated on multiple small datasets, as well as its scale perceptibility, and its application in conjunction with current state-of-the-art methods has further improved performance. Our codes are available at: https://github.com/cmcamdy/Train\_ViT\_Translation\_Perceptibility.
 
 
