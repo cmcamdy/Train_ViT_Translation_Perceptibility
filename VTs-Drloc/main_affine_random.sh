@@ -20,7 +20,7 @@ DISK_DATA=${DATA_DIR}/datasets/${DATASET}
 # TARGET_FOLDER=${DATASET}-${MODE}-sz${IMG_SIZE}-drloc${LAMBDA_DRLOC}-bs${BATCH_SIZE}-choose_trans
 TARGET_FOLDER=${DATASET}-${MODE}-sz${IMG_SIZE}-drloc${LAMBDA_DRLOC}-bs${BATCH_SIZE}-choose_trans-choose_scale-random
 # TARGET_FOLDER=${DATASET}-${MODE}-sz${IMG_SIZE}-drloc${LAMBDA_DRLOC}-bs128-g1_with_scale
-SAVE_DIR=${DATA_DIR}/outputs/SPTv2/visiontransformer-expr/${TARGET_FOLDER}
+SAVE_DIR=${DATA_DIR}/outputs/SPTv3/visiontransformer-expr/${TARGET_FOLDER}
 
 python3 -m torch.distributed.launch  --master_port 65002 \
     main_affine.py \

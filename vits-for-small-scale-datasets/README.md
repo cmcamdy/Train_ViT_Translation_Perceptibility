@@ -65,12 +65,11 @@
     * ```cait_timnet_patch8_input32``` - 67.46 @ 64
 ### (August 08, 2022)
 * Self-supervised training and finetuning codes released.
-   
+  
 <hr>
 
 ## Highlights
 1. Vision Transformers, whether monolithic or non-monolithic, both suffer when trained from scratch on small datasets. This is primarily due to the lack of locality, inductive biases and hierarchical structure of the representations which is commonly observed in the Convolutional Neural Networks. As a result, ViTs require large-scale pre-training to learn such properties from the data for better transfer learning to downstream tasks. We show that inductive biases can be learned directly from the small dataset through self-supervision, thus serving as an effective weight initialization for finetuning on the same dataset.
-
 
 <!-- <img src="assets/final_main_figure.png" height="500" width="700"> -->
 <!-- ![main_figure](assets/final_main_figure.png) -->
@@ -197,7 +196,7 @@ python finetune.py --arch vit  \
                    --batch_size 256 \
                    --epochs 100 \
                    --pretrained_weights "/path/to/saved/checkpoint"
-``` 
+```
 ``` --arch ``` can be ```vit/swin/cait ```.
 ``` --datasets ``` can be ```Tiny-Imagenet/CIFAR10/CIFAR100/CINIC/SVHN ```.
 Load the corresponding weights for finetuning.
@@ -251,4 +250,4 @@ Our code is build on the repositories of [DINO](https://github.com/facebookresea
 
 <hr>
 
-  
+

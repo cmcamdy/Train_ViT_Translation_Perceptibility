@@ -1,10 +1,10 @@
-cd /work/workspace12/chenhuan/code/vits-for-small-scale-datasets-office
+root_path=YOUR/PROJECT/ROOT/PATH
+cd ${root_path}/vits-for-small-scale-datasets-office
 source activate mmdet
-root_path=/work/workspace12/chenhuan/code
 
 # export CUDA_VISIBLE_DEVICES=0
-# datapath=/work/workspace12/chenhuan/code/datasets/tiny-imagenet-200
-# output_dir=/work/workspace12/chenhuan/code/outputs/ssloff/vit_base_imagenet-200
+# datapath=${root_path}/datasets/tiny-imagenet-200
+# output_dir=${root_path}/outputs/ssloff/vit_base_imagenet-200
 # nohup python -m torch.distributed.launch --master_port 61411 train_ssl.py --arch vit \
 #                                    --dataset Tiny-Imagenet --image_size 64 \
 #                                    --datapath ${datapath} \
@@ -20,9 +20,9 @@ root_path=/work/workspace12/chenhuan/code
 
 
 export CUDA_VISIBLE_DEVICES=5
-datapath=/work/workspace12/chenhuan/code/datasets/tiny-imagenet-200
+datapath=${root_path}/datasets/tiny-imagenet-200
 pretrained_weights=${root_path}/outputs/ssloff/vit_base_imagenet-200/checkpoint0190.pth
-output_dir=/work/workspace12/chenhuan/code/outputs/ssloff/vit_base_imagenet-200
+output_dir=${root_path}/outputs/ssloff/vit_base_imagenet-200
 nohup python finetune.py --arch vit  \
                    --dataset Tiny-Imagenet \
                    --datapath ${datapath} \
@@ -35,9 +35,9 @@ nohup python finetune.py --arch vit  \
 
 
 export CUDA_VISIBLE_DEVICES=4
-datapath=/work/workspace12/chenhuan/code/datasets/tiny-imagenet-200
+datapath=${root_path}/datasets/tiny-imagenet-200
 pretrained_weights=${root_path}/outputs/ssloff/vit_base_imagenet-200/checkpoint0190.pth
-output_dir=/work/workspace12/chenhuan/code/outputs/ssloff/vit_base_imagenet-200
+output_dir=${root_path}/outputs/ssloff/vit_base_imagenet-200
 nohup python finetune_affine.py --arch vit  \
                    --dataset Tiny-Imagenet \
                    --datapath ${datapath} \
@@ -54,8 +54,8 @@ nohup python finetune_affine.py --arch vit  \
 
 
 export CUDA_VISIBLE_DEVICES=3
-datapath=/work/workspace12/chenhuan/code/datasets/tiny-imagenet-200
-output_dir=/work/workspace12/chenhuan/code/outputs/ssloff/vit_base_imagenet-200
+datapath=${root_path}/datasets/tiny-imagenet-200
+output_dir=${root_path}/outputs/ssloff/vit_base_imagenet-200
 nohup python finetune_affine.py --arch vit  \
                    --dataset Tiny-Imagenet \
                    --datapath ${datapath} \
