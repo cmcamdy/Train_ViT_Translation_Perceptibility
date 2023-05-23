@@ -1,0 +1,8 @@
+dataset/*
+tensorboard/*
+save/*
+
+./*/__pycache__
+./*/*/__pycache__
+./*/tensorboard/*
+./logs
