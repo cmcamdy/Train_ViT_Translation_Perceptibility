@@ -11,13 +11,13 @@ Recently, the Vision Transformer (ViT), which applied the transformer structure 
 #### Shifted Patch Tokenization
 
 <!-- <div align="center"> -->
-  <img src="SPT.png" width="75%" title="" alt="teaser">
+  <img src="assert/SPT.png" width="75%" title="" alt="teaser">
 <!-- </div> -->
 
 #### Locality Self-Attention
 
 <!-- <div align="center"> -->
-  </img><img src="LSA.png" width="75%" title="" alt="teaser"></img>
+  </img><img src="assert/LSA.png" width="75%" title="" alt="teaser"></img>
 <!--   </div> -->
 
 ### Model Performance
@@ -38,7 +38,7 @@ Recently, the Vision Transformer (ViT), which applied the transformer structure 
 #### Accuracy-Throughput Graph on Tiny-ImageNet
 
 <!-- <div align="center"> -->
-  <img src="main.png" width="50%" title="" alt="teaser"></img>
+  <img src="assert/main.png" width="50%" title="" alt="teaser"></img>
 <!-- </div> -->
 
 ## How to train models
