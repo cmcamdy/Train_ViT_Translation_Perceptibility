@@ -1,4 +1,4 @@
-root_path=${root_path}
+root_path=YOUR/PROJECT/ROOT/PATH
 cd ${root_path}/vits-for-small-scale-datasets-office
 source activate mmdet
 
